@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_hotdogb.mk
+    $(LOCAL_DIR)/krypton_hotdogb.mk
 
 COMMON_LUNCH_CHOICES := \
-    colt_hotdogb-user \
-    colt_hotdogb-userdebug \
-    colt_hotdogb-eng
+    krypton_hotdogb-user \
+    krypton_hotdogb-userdebug \
+    krypton_hotdogb-eng

@@ -12,7 +12,7 @@ $(call inherit-product, vendor/oneplus/hotdogb/hotdogb-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-colt
+    $(LOCAL_PATH)/overlay-krypton
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -42,3 +42,6 @@ PRODUCT_PROPERTY_OVERRIDES  += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Mark as official build
+OFFICIAL_BUILD := true

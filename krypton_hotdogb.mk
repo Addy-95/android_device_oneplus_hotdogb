@@ -12,10 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
 # Inherit some common ColtOS stuff.
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
-
-#Inherit Gapps
-$(call inherit-product, vendor/gapps/basic/config.mk)
+$(call inherit-product, vendor/krypton/config/KryptonCommon.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := colt_hotdogb
@@ -29,7 +26,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080x2160
+TARGET_SCREEN_HEIGHT := 3120
+TARGET_SCREEN_WIDTH := 1440
 
 # Build info
 BUILD_FINGERPRINT := "OnePlus/OnePlus7T/OnePlus7T:11/RKQ1.201022.002/2108181508:user/release-keys"
@@ -39,6 +37,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus7T-user 11 RKQ1.201022.002 2108181508 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-COLT_BUILD_TYPE := OFFICIAL
-COLT_BUILD_MAINTAINER := Addy™
