@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_hotdogb.mk
+    $(LOCAL_DIR)/cherish_hotdogb.mk
+
+COMMON_LUNCH_CHOICES := \
+    cherish_hotdogb-user \
+    cherish_hotdogb-userdebug \
+    cherish_hotdogb-eng
