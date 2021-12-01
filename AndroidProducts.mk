@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_hotdogb.mk
+    $(LOCAL_DIR)/colt_hotdogb.mk
+
+COMMON_LUNCH_CHOICES := \
+    colt_hotdogb-user \
+    colt_hotdogb-userdebug \
+    colt_hotdogb-eng
