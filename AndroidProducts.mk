@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_hotdogb.mk
+    $(LOCAL_DIR)/octavi_hotdogb.mk
+
+COMMON_LUNCH_CHOICES := \
+    octavi_hotdogb-user \
+    octavi_hotdogb-userdebug \
+    octavi_hotdogb-eng
