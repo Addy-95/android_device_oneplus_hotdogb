@@ -19,6 +19,12 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Height of the status bar. Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead. -->
+    <dimen name="status_bar_height">67.9px</dimen>
+    <dimen name="status_bar_height_default">28dp</dimen>
+    <dimen name="status_bar_height_portrait">67.9px</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+    
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
 
@@ -285,7 +291,5 @@
     
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_supportSmartPixels">true</bool>
-    
-    
 
 </resources>
